@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="https://fejesmate.hu/assets/favicon.ico">
+        <meta name="author" content="Fejes Máté" />
+        <meta name="keywords" content="Cisco IP kinyerés, IP cím eszközönként, IP cím interfészenként, Cisco hálózati eszközök IP címek, Hálózati interfész információ, IP címek lekérdezése Cisco eszközökön, IPv4, IPv6" />
+        <!-- Primary Meta Tags -->
+        <title>CIE - Cisco Ip Extractor</title>
+        <meta name="description" content="Töltsd be a Cisco Packet Tracer konfigurációs eseménynaplódat, és az oldal automatikusan kinyeri az IP-címeket eszközönként és interfészek szerint rendszerezve." />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ip.fejesmate.hu" />
+        <meta property="og:title" content="Cisco IP kinyerő – Eszközök és Interfészekre Bontva" />
+        <meta property="og:description" content="Töltsd be a Cisco Packet Tracer konfigurációs eseménynaplódat, és az oldal automatikusan kinyeri az IP-címeket eszközönként és interfészek szerint rendszerezve." />
+        <meta property="og:image" content="https://fejesmate.hu/assets/favicon.ico" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://ip.fejesmate.hu" />
+        <meta property="twitter:title" content="Cisco IP kinyerő – Eszközök és Interfészekre Bontva" />
+        <meta property="twitter:description" content="Töltsd be a Cisco Packet Tracer konfigurációs eseménynaplódat, és az oldal automatikusan kinyeri az IP-címeket eszközönként és interfészek szerint rendszerezve." />
+        <meta property="twitter:image" content="https://fejesmate.hu/assets/favicon.ico" />
+        <script src="src/script.js"></script>
+        <link href="./src/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif;">
+        <div class="container">
+            <figure class="text-center m-3">
+                <blockquote class="blockquote">
+                <h3>CIE - Cisco Ip Extractor</h3>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                <cite title="Source Title">Készítette: Fejes Máté</cite>
+                </figcaption>
+            </figure>
+            <textarea class="rounded form-control shadow" id="logInput" rows="20" placeholder="Másold be a logodat"></textarea>
+            <div class="text-center mb-5 m-3 d-flex align-items-center justify-content-center gap-3 flex-wrap">
+                <button class="rounded me-3 btn btn-primary" onclick="processLog()">IP cím kinyerése</button>
+                <span class="fw-bold"><a href="#downloadTXT">⎯Miután kinyerted az ip címet lelehet tölteni a config alatt⎯</a></span>
+            </div>
+            <div id="output"></div>
+        </div>
+        <script src="./src/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
